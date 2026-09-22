@@ -1,21 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: mx.itson.devops.descuento.DescuentoFronteraTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.089 s <<< FAILURE! -- in mx.itson.devops.descuento.DescuentoFronteraTest
-mx.itson.devops.descuento.DescuentoFronteraTest.diezPorCientoEnLaFrontera -- Time elapsed: 0.045 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: TODO(alumno): 100 unidades deben dar 10 %. Sustituye esta linea por assertEquals(esperado, obtenido).
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at mx.itson.devops.descuento.DescuentoFronteraTest.diezPorCientoEnLaFrontera(DescuentoFronteraTest.java:28)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-
-mx.itson.devops.descuento.DescuentoFronteraTest.diezPorCientoDespuesDeLaFrontera -- Time elapsed: 0.004 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: TODO(alumno): 101 unidades deben dar 10 %. Sustituye esta linea por assertEquals(esperado, obtenido).
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at mx.itson.devops.descuento.DescuentoFronteraTest.diezPorCientoDespuesDeLaFrontera(DescuentoFronteraTest.java:34)
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.093 s <<< FAILURE! -- in mx.itson.devops.descuento.DescuentoFronteraTest
+mx.itson.devops.descuento.DescuentoFronteraTest.diezPorCientoEnLaFrontera -- Time elapsed: 0.049 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <10> but was: <0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at mx.itson.devops.descuento.DescuentoFronteraTest.diezPorCientoEnLaFrontera(DescuentoFronteraTest.java:29)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
