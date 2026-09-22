@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="mx.itson.devops.descuento.DescuentoSmokeTest" time="0.011" tests="3" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="mx.itson.devops.descuento.DescuentoFronteraTest" time="0.089" tests="3" errors="0" skipped="0" failures="2" flakes="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -57,7 +57,25 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="pedidoPequenoNoTieneDescuento" classname="mx.itson.devops.descuento.DescuentoSmokeTest" time="0.001"/>
-  <testcase name="cantidadNegativaEsUnError" classname="mx.itson.devops.descuento.DescuentoSmokeTest" time="0.005"/>
-  <testcase name="sinUnidadesNoHayDescuento" classname="mx.itson.devops.descuento.DescuentoSmokeTest" time="0.002"/>
+  <testcase name="diezPorCientoEnLaFrontera" classname="mx.itson.devops.descuento.DescuentoFronteraTest" time="0.045">
+    <failure message="TODO(alumno): 100 unidades deben dar 10 %. Sustituye esta linea por assertEquals(esperado, obtenido)." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: TODO(alumno): 100 unidades deben dar 10 %. Sustituye esta linea por assertEquals(esperado, obtenido).
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at mx.itson.devops.descuento.DescuentoFronteraTest.diezPorCientoEnLaFrontera(DescuentoFronteraTest.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="sinDescuentoJustoAntesDeLaFrontera" classname="mx.itson.devops.descuento.DescuentoFronteraTest" time="0.002"/>
+  <testcase name="diezPorCientoDespuesDeLaFrontera" classname="mx.itson.devops.descuento.DescuentoFronteraTest" time="0.004">
+    <failure message="TODO(alumno): 101 unidades deben dar 10 %. Sustituye esta linea por assertEquals(esperado, obtenido)." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: TODO(alumno): 101 unidades deben dar 10 %. Sustituye esta linea por assertEquals(esperado, obtenido).
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at mx.itson.devops.descuento.DescuentoFronteraTest.diezPorCientoDespuesDeLaFrontera(DescuentoFronteraTest.java:34)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
 </testsuite>
