@@ -24,7 +24,7 @@ jobs:
           cache: maven
 
       - name: Build y pruebas
-        run: mvn -B verify
+        run: mvn -B verify -f descuento-volumen/pom.xml
 
       - name: Publicar los reportes de pruebas
         if: always()
