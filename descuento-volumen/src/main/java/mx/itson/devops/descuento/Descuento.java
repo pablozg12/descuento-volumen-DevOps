@@ -16,13 +16,14 @@ public class Descuento {
         if (unidades < 0) {
             throw new IllegalArgumentException("unidades negativas: " + unidades);
         }
-        if (unidades >= 500) {
+        if (unidades >= 1000) {
+            return 20; 
+        } else if (unidades >= 500) {
             return 15;
-        }
-        if (unidades >= 100) {
+        } else if (unidades >= 100) {
             return 10;
         }
-        
+
         return 0;
     }
 
